@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>PORTEA |</title>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+      <link rel="stylesheet" href="assets/styles/owl.carousel.min.css" />
+      <link rel="stylesheet" type="text/css" href="assets/styles/portea.css">
+      <!-- Fontawesome icons -->
+      <script src="https://use.fontawesome.com/2657e91c4d.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+
+
+      <nav class="nav-extended">
+        <div class="nav-wrapper portea-nav-wrapper">
+          <div class="row margin-null">
+            <div class="col s3 m2">
+              <a href="#" class="left"><img class="responsive-img logo" src="assets/images/logo-portea.png"></a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-content portea-nav">
+          <ul class="tabs tabs-transparent">
+            <li class="tab"><a class="active" href="#personal_info">Personal Info</a></li>
+            <li class="tab"><a href="#location">Location</a></li>
+            <li class="tab"><a href="#date_time">Date And Time</a></li>
+            <li class="tab"><a href="#confirm">Confirm</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div id="personal_info" class="col s12 tab-content">
+        <div class="row">
+          <div class="col s12">
+            <div class="card col s12">           
+              <form>
+                <div class="row">       
+                  <div class="input-field">
+                    <input id="name" type="text">
+                    <label for="name">Name</label>
+                  </div>
+                   <div class="input-field">
+                    <input id="mobile" type="text">
+                    <label for="mobile">Mobile</label>
+                  </div>
+                  <div class="input-field">
+                    <input id="email" type="text">
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="input-field">
+                    <select>
+                      <option value="0" disabled selected>Gender</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                    </select>
+                  </div>
+                  <div class="col s12 center-align">
+                    <a class="waves-effect waves-light btn next-location">Next</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+      <div id="location" class="col s12 tab-content">
+        <div class="row">
+          <div class="col s12">
+            <div class="card col s12">           
+              <form>
+                <div class="row">       
+                  <div class="input-field">
+                    <input id="house" type="text">
+                    <label for="house">House No, Street Name</label>
+                  </div>
+                   <div class="input-field">
+                    <input id="locality" type="text">
+                    <label for="locality">Locality</label>
+                  </div>
+                  <div class="input-field">
+                    <select>
+                      <option value="0" disabled selected>City</option>
+                      <option value="cityname">City Name</option>
+                      <option value="cityname">City Name</option>
+                    </select>
+                  </div>
+                  <div class="col s12 center-align">
+                    <a class="waves-effect waves-light btn next-date">Next</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div> 
+      </div>
+
+      <div id="date_time" class="col s12 tab-content">
+        <div class="row">
+          <div class="col s12">
+
+            <div class="card col s12 padding-null">  
+              <div class="col s12">
+                <p class="card-ptitle"><span><i class="fa fa-calendar-o" aria-hidden="true"></i></span>Select date</p>
+              </div>
+              <div class="col s1 padding-null nav-prev-date">
+                <h5><i class="fa fa-angle-left" aria-hidden="true"></i></h5>
+              </div>
+              <div class="col s10 padding-null">
+                <div id="select-date" class="owl-carousel owl-theme">
+                   <div class="item center-align active">
+                      <h5>24</h5>
+                      <p>Fri</p>
+                   </div>
+                    <div class="item center-align">
+                      <h5>25</h5>
+                      <p>Sat</p>
+                   </div>
+                    <div class="item center-align">
+                      <h5>26</h5>
+                      <p>Sun</p>
+                   </div>
+                    <div class="item center-align">
+                      <h5>27</h5>
+                      <p>Mon</p>
+                   </div>
+                    <div class="item center-align">
+                      <h5>28</h5>
+                      <p>Tue</p>
+                   </div>
+                   <div class="item center-align">
+                      <h5>29</h5>
+                      <p>Wed</p>
+                   </div>
+                </div>
+              </div>
+              <div class="col s1 padding-null nav-next-date">
+                <h5><i class="fa fa-angle-right" aria-hidden="true"></i></h5>
+              </div>
+            </div>
+
+            <div class="card col s12 padding-null" id="first-time-slot">  
+              <div class="col s12">
+                <p class="card-ptitle"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>Select prefered time slot</p>
+              </div>
+              <div class="col s1 padding-null nav-prev-time">
+                <h5><i class="fa fa-angle-left" aria-hidden="true"></i></h5>
+              </div>
+              <div class="col s10 padding-null">
+                <div id="select-time" class="owl-carousel owl-theme">
+                   <div class="item center-align">
+                      <div class="col s6 padding-null">
+                      <p class="time active">10:00 AM - 10:30 AM</p>
+                      </div>
+                       <div class="col s6 padding-null">
+                      <p class="time">10:30 AM - 11:00 AM</p>
+                      </div>
+                       <div class="col s6 padding-null">
+                      <p class="time">11:00 AM - 11:30 AM</p>
+                      </div>
+                       <div class="col s6 padding-null">
+                      <p class="time">11:30 AM - 12:00 PM</p>
+                      </div>
+                   </div>
+                    <div class="item center-align">
+                      <div class="col s6 padding-null">
+                      <p class="time">12:00 AM - 12:30 PM</p>
+                      </div>
+                       <div class="col s6 padding-null">
+                      <p class="time">12:30 AM - 01:00 PM</p>
+                      </div>
+                       <div class="col s6 padding-null">
+                      <p class="time">01:00 AM - 01:30 PM</p>
+                      </div>
+                       <div class="col s6 padding-null">
+                      <p class="time">01:30 AM - 02:00 PM</p>
+                      </div>
+                   </div>                 
+                </div>
+              </div>
+              <div class="col s1 padding-null nav-next-time">
+                <h5><i class="fa fa-angle-right" aria-hidden="true"></i></h5>
+              </div>
+            </div>
+
+            <div class="card col s12 padding-null" id="second-time-slot">  
+              <div class="col s12">
+                <p class="card-ptitle"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>Select second prefered time slot</p>
+              </div>
+              <div class="col s1 padding-null nav-prev-time">
+                <h5><i class="fa fa-angle-left" aria-hidden="true"></i></h5>
+              </div>
+              <div class="col s10 padding-null">
+                <div id="select-time2" class="owl-carousel owl-theme">
+                   <div class="item center-align">
+                      <div class="col s6 padding-null">
+                      <p class="time">10:00 AM - 10:30 AM</p>
+                      </div>
+                       <div class="col s6 padding-null">
+                      <p class="time active">10:30 AM - 11:00 AM</p>
+                      </div>
+                       <div class="col s6 padding-null">
+                      <p class="time">11:00 AM - 11:30 AM</p>
+                      </div>
+                       <div class="col s6 padding-null">
+                      <p class="time">11:30 AM - 12:00 PM</p>
+                      </div>
+                   </div>
+                    <div class="item center-align">
+                      <div class="col s6 padding-null">
+                      <p class="time">12:00 AM - 12:30 PM</p>
+                      </div>
+                       <div class="col s6 padding-null">
+                      <p class="time">12:30 AM - 01:00 PM</p>
+                      </div>
+                       <div class="col s6 padding-null">
+                      <p class="time">01:00 AM - 01:30 PM</p>
+                      </div>
+                       <div class="col s6 padding-null">
+                      <p class="time">01:30 AM - 02:00 PM</p>
+                      </div>
+                   </div>                 
+                </div>
+              </div>
+              <div class="col s1 padding-null nav-next-time">
+                <h5><i class="fa fa-angle-right" aria-hidden="true"></i></h5>
+              </div>
+            </div>
+
+            <div class="card col s12 padding-null hidden" id="available-time-slot">  
+              <div class="col s12">
+                <p class="card-ptitle"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>Available time slot</p>
+              </div>
+              <div class="col s1 padding-null nav-prev-timeavailable">
+                <h5><i class="fa fa-angle-left" aria-hidden="true"></i></h5>
+              </div>
+              <div class="col s10 padding-null">
+                <div id="select-timeavailable" class="owl-carousel owl-theme">
+                   <div class="item center-align">
+                      <div class="col s6 padding-null">
+                      <p class="time active">10:00 AM - 10:30 AM</p>
+                      </div>
+                       <div class="col s6 padding-null">
+                      <p class="time">10:30 AM - 11:00 AM</p>
+                      </div>
+                       <div class="col s6 padding-null">
+                      <p class="time">11:00 AM - 11:30 AM</p>
+                      </div>
+                       <div class="col s6 padding-null">
+                      <p class="time">11:30 AM - 12:00 PM</p>
+                      </div>
+                   </div>
+                    <div class="item center-align">
+                      <div class="col s6 padding-null">
+                      <p class="time">12:00 AM - 12:30 PM</p>
+                      </div>
+                       <div class="col s6 padding-null">
+                      <p class="time">12:30 AM - 01:00 PM</p>
+                      </div>
+                       <div class="col s6 padding-null">
+                      <p class="time">01:00 AM - 01:30 PM</p>
+                      </div>
+                       <div class="col s6 padding-null">
+                      <p class="time">01:30 AM - 02:00 PM</p>
+                      </div>
+                   </div>
+                 
+                </div>
+              </div>
+              <div class="col s1 padding-null nav-next-timeavailable">
+                <h5><i class="fa fa-angle-right" aria-hidden="true"></i></h5>
+              </div>
+            </div>
+
+                <!-- Error -->
+                <div id="error" class="modal">
+                  <div class="modal-content">
+                    <div class="row">
+                      <div class="col s12"><p class="close">x</p></div>
+                      <div class="col s4 offset-s4">
+                        <img class="responsive-img" src="assets/images/ic_error.svg">
+                      </div>
+                      <div class="col s12 center-align">
+                        <h5>Sorry!</h5>
+                        <h6 class="center-align">Selected slots are not available</h6>
+                        <a class="waves-effect waves-light btn available-slot">Show available time slots</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+          </div>   
+
+          <div class="col s12 center-align">
+            <a class="waves-effect waves-light btn error">Next</a><br>
+            <a class="waves-effect waves-light btn next-confirm hidden">Next</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="confirm" class="col s12 tab-content">
+        <div class="row">
+          <div class="col s12">
+            <div class="card col s12"> 
+              <h6 class="center-align">Sit back & relax ! while we verify your mobile number</h6>
+
+              <form>
+                <div class="row otp">       
+                  <div class="input-field">
+                    <input id="name" type="text" placeholder="Enter OTP">
+                  </div>
+                  <div class="col s12 center-align">
+                    <a class="waves-effect waves-light btn">Verify OTP</a>
+                  </div>
+                </div>
+              </form>
+              <p class="center-align">Trouble receiving the code <span>Resend OTP</span></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <script type="text/javascript" src="assets/scripts/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+      <script src="assets/scripts/owl.carousel.min.js"></script>
+      <script>
+        $(document).ready(function() {
+
+          $('select').material_select();
+          $('.modal').modal();
+
+          $('.error').click(function(){
+            $('#error').modal('open');
+          });
+
+          $('.available-slot').click(function(){
+            $('#error').modal('close');
+            $('#available-time-slot').removeClass('hidden');
+            $('#first-time-slot').addClass('hidden');
+            $('#second-time-slot').addClass('hidden');
+            $('.error').addClass('hidden');
+            $('.next-confirm').removeClass('hidden');
+          });
+
+          $('.modal-content .close').click(function(){
+            $('#error').modal('close');
+          });
+
+          $('.next-location').click(function(){
+            $('ul.tabs').tabs('select_tab', 'location');
+          });          
+
+          $('.next-date').click(function(){
+            $('ul.tabs').tabs('select_tab', 'date_time');
+          });
+
+          $('.next-confirm').click(function(){
+            $('ul.tabs').tabs('select_tab', 'confirm');
+          });
+
+          $('#select-date').owlCarousel({
+            loop:false,
+            margin:10,
+            nav:false,
+            responsive:{
+                0:{
+                    items:5
+                },
+                600:{
+                    items:5
+                },
+                1000:{
+                    items:5
+                }
+            }
+          })
+
+          $('#select-time').owlCarousel({
+            loop:false,
+            margin:10,
+            nav:false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+          })
+
+
+          $('#select-time2').owlCarousel({
+            loop:false,
+            margin:10,
+            nav:false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+          })
+
+           $('#select-timeavailable').owlCarousel({
+            loop:false,
+            margin:10,
+            nav:false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+          })
+
+          $('#select-date .item').click(function(){
+            $('#select-date .item').removeClass("active");
+            $(this).addClass("active");
+          });
+
+          $('#select-time .item .time').click(function(){
+            $('#select-time .item .time').removeClass("active");
+            $(this).addClass("active");
+          });
+
+          $('#select-time2 .item .time').click(function(){
+            $('#select-time2 .item .time').removeClass("active");
+            $(this).addClass("active");
+          });
+
+          $('#select-timeavailable .item .time').click(function(){
+            $('#select-timeavailable .item .time').removeClass("active");
+            $(this).addClass("active");
+          });
+
+
+          ///////////////////////////////////////////
+          var owldate = $('#select-date');
+          owldate.owlCarousel();
+          // Go to the next item
+          $('.nav-next-date').click(function() {
+              owldate.trigger('next.owl.carousel');
+          })
+          // Go to the previous item
+          $('.nav-prev-date').click(function() {
+              // With optional speed parameter
+              // Parameters has to be in square bracket '[]'
+              owldate.trigger('prev.owl.carousel', [300]);
+          })
+          ///////////////////////////////////////
+
+
+          ////////////////////////////////////////////
+          var owltime = $('#select-time');
+          owltime.owlCarousel();
+          // Go to the next item
+          $('.nav-next-time').click(function() {
+              owltime.trigger('next.owl.carousel');
+          })
+          // Go to the previous item
+          $('.nav-prev-time').click(function() {
+              // With optional speed parameter
+              // Parameters has to be in square bracket '[]'
+              owltime.trigger('prev.owl.carousel', [300]);
+          })
+          ////////////////////////////////////////////////
+
+
+          ////////////////////////////////////////////
+          var owltime2 = $('#select-time2');
+          owltime2.owlCarousel();
+          // Go to the next item
+          $('.nav-next-time2').click(function() {
+              owltime2.trigger('next.owl.carousel');
+          })
+          // Go to the previous item
+          $('.nav-prev-time2').click(function() {
+              // With optional speed parameter
+              // Parameters has to be in square bracket '[]'
+              owltime2.trigger('prev.owl.carousel', [300]);
+          })
+          ////////////////////////////////////////////////
+
+          ////////////////////////////////////////////
+          var owltime2 = $('#select-timeavailable');
+          owltime2.owlCarousel();
+          // Go to the next item
+          $('.nav-next-timeavailable').click(function() {
+              owltime2.trigger('next.owl.carousel');
+          })
+          // Go to the previous item
+          $('.nav-prev-timeavailable').click(function() {
+              // With optional speed parameter
+              // Parameters has to be in square bracket '[]'
+              owltime2.trigger('prev.owl.carousel', [300]);
+          })
+          ////////////////////////////////////////////////
+
+
+
+        });
+      </script>
+    </body>
+  </html>
+
