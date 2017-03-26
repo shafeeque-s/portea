@@ -207,14 +207,14 @@ a.btn{
 	padding: 0;
     margin-bottom: 0px;
     margin-top: 5px;
-    font-size: 12px;
+    font-size: 0.8em;
     color: #272727;
     border-bottom: 1px solid #efefef;
     padding-bottom: 5px;
 }
 .card-ptitle span{
 	margin-right: 10px;
-    font-size: 15px;
+    font-size: 1.3em;
 }
 
 #confirm h6{
