@@ -190,7 +190,7 @@
               <div class="col s12">
                 <p class="card-ptitle"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>Select second prefered time slot</p>
               </div>
-              <div class="col s1 padding-null nav-prev-time">
+              <div class="col s1 padding-null nav-prev-time2">
                 <h5><i class="fa fa-angle-left" aria-hidden="true"></i></h5>
               </div>
               <div class="col s10 padding-null">
@@ -225,7 +225,7 @@
                    </div>                 
                 </div>
               </div>
-              <div class="col s1 padding-null nav-next-time">
+              <div class="col s1 padding-null nav-next-time2">
                 <h5><i class="fa fa-angle-right" aria-hidden="true"></i></h5>
               </div>
             </div>
@@ -502,17 +502,17 @@
           ////////////////////////////////////////////////
 
           ////////////////////////////////////////////
-          var owltime2 = $('#select-timeavailable');
-          owltime2.owlCarousel();
+          var owltime3 = $('#select-timeavailable');
+          owltime3.owlCarousel();
           // Go to the next item
           $('.nav-next-timeavailable').click(function() {
-              owltime2.trigger('next.owl.carousel');
+              owltime3.trigger('next.owl.carousel');
           })
           // Go to the previous item
           $('.nav-prev-timeavailable').click(function() {
               // With optional speed parameter
               // Parameters has to be in square bracket '[]'
-              owltime2.trigger('prev.owl.carousel', [300]);
+              owltime3.trigger('prev.owl.carousel', [300]);
           })
           ////////////////////////////////////////////////
 
