@@ -41,6 +41,9 @@ input[type=text]{
 label{
 	padding: 2px 10px;
 }
+.tabs.tabs-transparent .indicator {
+    background-color: #3fc1bf;
+}
 .hidden{
 	display: none;
 }
