@@ -157,12 +157,16 @@ a.btn{
 	font-size: 12px;
     display: inline-block;
     border: 1px solid #c3c3c3;
-    padding: 10px 3px;
+    padding: 10px 2px;
+    width: 95%;
 }
 
 .time.active{
 	background: #3fc1bf;
     border-color: #3fc1bf;
+    color: white;
+}
+.time.active p{
     color: white;
 }
 
