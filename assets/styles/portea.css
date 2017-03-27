@@ -46,6 +46,11 @@ label{
 .tabs.tabs-transparent .indicator {
     background-color: #3fc1bf;
 }
+
+.dropdown-content li>a, .dropdown-content li>span {
+    font-size: 0.8em !important;
+}
+
 .hidden{
 	display: none;
 }
